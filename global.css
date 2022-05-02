@@ -1,0 +1,57 @@
+:root {
+    --cs-text-default: #323232;
+    --cs-text-disabled: #606060;
+    --cs-text-darkBlue: #091E42;
+    --cs-text-dark-td: #252525;
+    --cs-bg-white: #FFFFFF;
+
+    --cs-accent-orange: #E6600D;
+    --cs-accent-yellow: #E09D00;
+    --cs-accent-red: #C14646;
+    --cs-accent-purple: #AB218E;
+    --cs-accent-purple-l: #925ACE;
+    --cs-accent-blue-l: #678BC7;
+    --cs-accent-blue: #0092D1;
+    --cs-accent-turquoise: #1A9898;
+    --cs-accent-green: #90A752;
+
+    --cs-gray: #6c757d;
+    --cs-gray-dark: #343a40;
+    --cs-gray-100: #f8f9fa;
+    --cs-gray-200: #e9ecef;
+    --cs-gray-300: #dee2e6;
+    --cs-gray-400: #ced4da;
+    --cs-gray-500: #adb5bd;
+    --cs-gray-600: #6c757d;
+    --cs-gray-700: #495057;
+    --cs-gray-800: #343a40;
+    --cs-gray-900: #212529;
+    
+    --cs-semantic-negative: #D21C1C;
+    --cs-semantic-negative-l: #F4D2D2;
+    --cs-semantic-negative-d: #970C0C;
+
+    --cs-semantic-critical: #E98305;
+    --cs-semantic-critical-l: #FAE2C7;
+    --cs-semantic-critical-d: #AE5700;
+
+    --cs-semantic-positive: #28A138;
+    --cs-semantic-positive-l: #D7EAD9;
+    --cs-semantic-positive-d: #2D7738;
+
+    --cs-semantic-neutral: #E5EAEF;
+    --cs-semantic-neutral-d: #252A31;
+
+    --cs-semantic-information: #0172CB;
+    --cs-semantic-information-l: #D0E9FB;
+    --cs-semantic-information-d: #005AA3;
+
+
+    --cs-font-sans-serif: 'Inter', sans-serif;
+    --cs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --cs-body-font-family: var(--bs-font-sans-serif);
+    --cs-body-font-size:1rem;
+    --cs-body-font-weight:400;
+    --cs-body-line-height: 1.5;
+    --cs-body-color: #212529;
+}

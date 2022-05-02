@@ -1,0 +1,837 @@
+@import url(/media-queries/media-queries-xl.css) only screen and (min-width:1200px); /* Media XL */
+@import url(/media-queries/media-queries-l.css) only screen and (min-width:992px) and (max-width:1199px); /* Media L */
+@import url(/media-queries/media-queries-m.css) only screen and (min-width:768px) and (max-width:991px); /* Media M */
+@import url(/media-queries/media-queries-s.css) only screen and (min-width:576px) and (max-width:767px); /* Media S */
+@import url(/media-queries/media-queries-xs.css) only screen and (max-width:575px); /* Media XS */
+@import url(/global.css); 
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    direction: ltr; /* Soldan sağa yazma */
+    overflow-x: hidden; /* x ekseninde taşma olmayacak */
+    overflow-y: hidden; /* y de taşma olursa scroll çıkacak */
+
+}
+
+body { 
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: var(--cs-bg-white);
+
+    font-family: 'Inter', sans-serif;
+    color: var(--cs-text-default);
+
+    line-height: 1.5; /* Satır Yüksekliği */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* -------------------- HEADER -------------------- */
+#header {
+    /* Layout */
+
+    align-items: center;
+    block-size: 44px;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 44px;
+    left: 0;
+    margin: 0;
+    min-block-size: 44px;
+    min-height: 44px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Other */
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: start;
+    text-rendering: optimizeLegibility;
+
+    background-color: #323232;
+}
+
+/* -------------------- HEADER LOGO -------------------- */
+.header-logo {
+    display: flex;
+    position: relative;
+
+    block-size: 44px;
+    align-items: center;
+    flex-basis: 0%;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+
+    font-size: 18px;
+    font-weight: 300px;
+
+    height: 44px;
+
+    justify-content: flex-start;
+
+    letter-spacing: normal;
+    line-height: 21.6px;
+
+    margin-bottom: 0;
+    margin-inline-start: 16px;
+    margin-left: 16px;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    user-select: none;
+
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: start;
+
+}
+
+/* -------------------- HEADER LOGO- SOL BUTTON-------------------- */
+.icon-button {
+    /* Layout */
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    inline-size: 30px;
+    margin: 0 0 0 2px;
+    padding: 0;
+    width: 30px;
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance*/
+    cursor: pointer;
+
+    /* Animation */
+    transition-duration: 0s;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    margin-inline-start: 2px;
+    user-select: none;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+
+}
+
+/* -------------------- HEADER LOGO- SOL BUTTON SVG-------------------- */
+.icon-button svg {
+    /* Layout */
+    height: 44px;
+    inline-size: 16px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 16px;
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance*/
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+}
+
+/* -------------------- HEADER HELP -------------------- */
+.header-help {
+    /* Layout */
+    position: relative;
+    align-items: center;
+    block-size: 44px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    height: 44px;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin: 0 0 0 16px;
+    padding: 0;
+    
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance*/
+    cursor: pointer;
+
+    /* Animation */
+    transition-duration: 0s;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    margin-inline-start: 0px;
+    margin-inline-end: 16px;
+    user-select: none;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: end;
+
+}
+
+/* -------------------- HEADER HELP BUTTON -------------------- */
+.help-button {
+    /* Layout */
+    block-size: 24px;
+    box-sizing: border-box;
+    height: 24px;
+    width: 24px;
+    inline-size: 24px;
+    margin: 0;
+    padding: 0;
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance*/
+    cursor: pointer;
+
+    /* Animation */
+    transition-duration: 0s;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+    
+}
+
+/* -------------------- HEADER HELP- SAG BUTTON SVG -------------------- */
+.help-button svg{
+    /* Layout */
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    
+
+    /* Text */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 21.6px;
+    text-size-adjust: 100%;
+
+    /* Appearance*/
+    cursor: pointer;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    -webkit-box-direction: normal;
+}
+
+.tk-body {
+    /* Layout */
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden;
+    padding: 0;
+    overflow:hidden;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    color: #323232;
+    background-color: #fff;
+
+    /* Other */
+    text-rendering: optimizeLegibility;
+}
+
+.si-body {
+     /* Layout */
+     box-sizing: border-box;
+     display: block;
+     height: 100%;
+     padding: 0;
+     width: 100%;
+     
+ 
+     /* Text */
+     direction: ltr;
+     font-size: 17px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 25px;
+     text-align: center;
+     text-size-adjust: 100%;
+ 
+     /* Appearance */
+     color: #323232;
+ 
+     /* Other */
+     text-rendering: optimizeLegibility;
+}
+
+.widget-container {
+     /* Layout */
+     position: relative;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     box-sizing: border-box;
+     margin: 0;
+     
+     display: flex;
+     height: 100%;
+     padding: 0;
+     min-width: 310px;
+     
+ 
+     /* Text */
+     direction: ltr;
+     font-size: 17px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 25px;
+     text-align: center;
+     text-size-adjust: 100%;
+     font-family: 'Inter', sans-serif;
+ 
+     /* Appearance */
+     color: #323232;
+ 
+     /* Other */
+     text-rendering: optimizeLegibility;
+     -webkit-box-align: center;
+}
+
+#step {
+    /* Layout */
+    box-sizing: border-box;
+    display: block;
+    width: 353px;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    color: #323232;
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+    -webkit-box-align: center;
+}
+
+.signin-label {
+    /* Layout */
+    box-sizing: border-box;
+    display: block;
+    margin: 10px 0;
+    height: 120px;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+
+    /* Animation */
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-duration: 0.5s;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+    animation-name: fade-in;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+    /* Appearance */
+    color: #323232;
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+}
+
+.signin-label svg {
+     /* Layout */
+     box-sizing: border-box;
+     max-height: 100px;
+     max-width: 300px;
+     width: 100px;
+ 
+     /* Text */
+     direction: ltr;
+     font-size: 17px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 25px;
+     text-align: center;
+     text-size-adjust: 100%;
+ 
+     /* Appearance */
+     color: #323232;
+     border-color: rgb(73, 73, 73);
+     border-bottom-style: none;
+     border-bottom-width: 0px;
+     border-image-outset: 0;
+     border-image-repeat: stretch;
+     border-image-slice: 100%;
+     border-image-source: none;
+     border-image-width: 1;
+     border-width: 0px;
+     border-radius: 8px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+     /* Other */
+     text-rendering: optimizeLegibility;
+}
+
+.stepE1 {
+    /* Layout */
+    box-sizing: border-box;
+    display: block;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    color: #323232;
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+    -webkit-box-align: center;
+}
+
+.signin-fade-in {
+     /* Layout */
+     box-sizing: border-box;
+     display: block;
+ 
+     /* Text */
+     direction: ltr;
+     font-size: 17px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 25px;
+     text-align: center;
+     text-size-adjust: 100%;
+     font-family: 'Inter', sans-serif;
+ 
+     /* Appearance */
+     color: #323232;
+  
+     /* Other */
+     text-rendering: optimizeLegibility;
+     -webkit-box-align: center;
+}
+
+.container-title {
+     /* Layout */
+     box-sizing: border-box;
+     display: block;
+     margin: 15px 0 15px 0;
+     max-width: 380px;
+     padding: 0;
+
+ 
+     /* Text */
+     direction: ltr;
+     font-size: 21px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 50px;
+     text-align: center;
+     text-size-adjust: 100%;
+     word-break: break-all;
+ 
+     /* Appearance */
+     color: #323232;
+  
+     /* Other */
+     margin-block-start: 5px;
+     margin-block-end: 13px;
+     margin-inline-start: 0;
+     margin-inline-end: 0;
+     text-rendering: optimizeLegibility;
+     -webkit-box-align: center;
+}
+
+.si-field-container {
+    /* Layout */
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin-left: 26.5px;
+    margin-right: 26.5px;
+    max-width: 380px;
+    padding: 0;
+
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+    word-break: break-all;
+
+    /* Appearance */
+    outline-color: rgb(73, 73, 73);
+    outline-style: none;
+    outline-width: 0px;
+    color: #323232;
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+    -webkit-box-align: center;
+    -webkit-tap-highlight-color: #fff;
+}
+
+.signin-form {
+    /* Text */
+    font-weight: 400;
+}
+
+.remember-password {
+    /* Layout */
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 18px;
+    position: relative;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    color: #323232;
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+    
+}
+
+.btn-success {
+    width: 100%;
+    background-color: #2D7738;
+    border-color: #2D7738;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+
+.si-container-footer {
+    /* Layout */
+    box-sizing: border-box;
+    display: block;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    color: #323232;
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+}
+
+.seperator {
+     /* Layout */
+     box-sizing: border-box;
+     display: block;
+     height: 0.25px;
+     margin: 20px 12.5px;
+     width: 328px;
+ 
+     /* Text */
+     direction: ltr;
+     font-size: 17px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 25px;
+     text-align: center;
+     text-size-adjust: 100%;
+ 
+     /* Appearance */
+     background-color: #e5e5e5;
+     background-size: cover;
+  
+     /* Other */
+     text-rendering: optimizeLegibility;
+}
+
+.link {
+    /* Layout */
+    box-sizing: border-box;
+    display: block;
+    margin-top: 17px;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    color: rgb(73, 73, 73);
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+}
+
+.si-forgot-password {
+    /* Layout */
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 9px;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+
+    /* Appearance */
+    color: rgb(73, 73, 73);
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+}
+
+#iforgot-link {
+    /* Layout */
+    box-sizing: border-box;
+    display: inline;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+
+    /* Text */
+    direction: ltr;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-size-adjust: 100%;
+    text-decoration-color: rgb(0, 112, 201);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    font-family: 'Inter', sans-serif;
+
+    /* Appearance */
+    color: rgb(0, 112, 201);
+    cursor: pointer;
+ 
+    /* Other */
+    text-rendering: optimizeLegibility;
+}
+
+#footer {
+    /* Layout */
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    bottom: 80px;
+
+    /* Text */
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    text-size-adjust: 100%;
+
+    /* Animation */
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: max-block-size;
+    transition-timing-function: ease-in-out;
+
+    /* Others */
+    text-rendering: optimizeLegibility;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+
+}
+
+.legal-footer-content {
+    /* Layout */
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    inline-size: 273.547px;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 0 15px;
+    width: 100%;
+
+    /* Text */
+    font-size: 13.2px;
+    font-weight: 300;
+    line-height: 18px;
+    text-size-adjust: 100%;
+
+
+
+    /* Others */
+    text-rendering: optimizeLegibility;
+    padding-block-start: 5px;
+    padding-block-end: 15px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+
+}
+
+.legal-footer-content span {
+    /* Layout */
+    padding: 7.5px;
+    margin: 2px;
+
+    /* Text */
+    font-size: 13.2px;
+    font-weight: 300;
+    line-height: 18px;
+    text-size-adjust: 100%;
+    text-decoration: none;
+
+    /* Appearance */
+    color: #323232;
+}
+
+.legal-footer-content span a {
+    /* Text */
+    font-size: 13.2px;
+    font-weight: 200;
+    line-height: 18px;
+    text-size-adjust: 100%;
+    text-decoration: none;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+
+    /* Appearance */
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.legal-footer-content span .copyright{
+    
+    
+    /* Text */
+    font-size: 13.2px;
+    font-weight: 200;
+    line-height: 18px;
+    text-size-adjust: 100%;
+    text-decoration: none;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+
+    /* Appearance */
+    color: rgba(0, 0, 0, 0.7);
+}
